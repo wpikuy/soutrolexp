@@ -17,6 +17,7 @@ $(document).ready(function () {
     $(".sourceGet").click(sourceGet);
     //定时获取数据
     setInterval(paraRefresh, 3000);
+    setInterval(updatedata, 2000);
     //没有用到---------------------------------------------------
 //    //开启修改功能
 //    doOperate();
@@ -200,3 +201,25 @@ function cancerOperate() {
 //    $(".txt").attr("disabled", "disabled");
 //    $("#submitBox").css("display", "none");
 //}
+
+
+
+//update data
+function updatedata() {
+    if (!station) {
+      // alert("请选择 站点！");
+    } else if (!machine) {
+      // alert("请选择 设备！");
+    } else if (!source) {
+       // alert("请选择 电源！");
+    } else {
+        var sms = machine + "_" + source + "_";
+        $.ajax({
+            type: "GET",
+            //有问题==========================================================================
+            url: "./rand",
+            dataType: "json",
+           
+        });
+    }
+}
