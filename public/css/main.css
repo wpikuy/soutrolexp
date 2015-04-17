@@ -74,40 +74,34 @@ body{
         .paraHead{
             width: 354px;
             margin: 0 auto;
-            overflow: hidden;
         }
-            #paraBg{
-                width: 323.62px;
-                height: 200px;
-                margin: 10px auto;
-                background-image: url(../img/02.jpg);
-                background-size: 100% 100%;
-            }
             .paraHead input[type="text"]{
                 width: 150px;
-                margin: 5px;
-                float: left;
-            }
-            .paraHead p{
-                width: 180px;
-                margin: 5px;
-                float: left;
+                margin: 10px auto 30px auto;
+                border: none;
             }
         .paraItem{
-            width: 354px;
-            margin: 0 auto;
-            overflow: hidden;
+            width: 320px;
+            height: 240px;
+            margin: 10px auto;
+            background-image: url(../img/circuit.fw.png);
+            background-size: 100% 100%;
         }
-            .paraItem p{
-                width: 150px;
-                margin: 5px;
-                float: left;
-                text-align: right;
-            }
             .paraItem input[type="text"]{
-                width: 180px;
-                margin: 5px;
-                float: left;
+                width: 60px;
+                border: none;
+            }
+            .txt{position: relative;}
+            #parameter_1{
+                left: 90px;
+            }
+            #parameter_2{
+                left: -130px;
+                top: 110px
+            }
+            #parameter_3{
+                left: -45px;
+                top: 200px;
             }
 /*没有用到---------------------------------------------------
             #operationBox{

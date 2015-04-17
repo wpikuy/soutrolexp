@@ -148,9 +148,9 @@ function paraShow(sms, data) {
         v = sms + "voltage",
         b = sms + "state";
     //要改----------------------------------------------------------------------------
-    $("#parameter_1").val(data.data[c]);
-    $("#parameter_2").val(data.data[v]);
-    $("#parameter_3").val(data.data[b]);
+    $("#parameter_1").val(data.data[c] + ' A');
+    $("#parameter_2").val(data.data[v] + ' V');
+    $("#parameter_3").val(data.data[b] > 500 ? '开' : '关');
 }
 
 //电源参数自动刷新

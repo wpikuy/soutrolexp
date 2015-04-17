@@ -180,38 +180,29 @@
                 <div class="elastic" id="info">
                     <h2 id="facilityName">站点&nbsp;<span id="stat"></span>&nbsp;&nbsp;设备&nbsp;<span id="faci"></span></h2>
                     <div class="paraBox">
-                        <div id="paraBg"></div>
                         <div class="paraHead">
                             <input type="text" value="电源 " id="sourceName" disabled="disabled" />
-                            <p>电源信息</p>
                         </div>
                         <div class="paraItem">
-                            <p>电流（A）：</p>
-                            <input type="text" class="txt current" value="1" id="parameter_1" disabled="disabled" />
-                        </div>
-                        <div class="paraItem">
-                            <p>电压（V）：</p>
+                            <input type="text" class="txt current" value="" id="parameter_1" disabled="disabled" />
                             <input type="text" class="txt voltage" value="" id="parameter_2" disabled="disabled" />
-                        </div>
-                        <div class="paraItem">
-                            <p>开 关(1/0)：</p>
-                            <input type="text" class="txt brake" value="" id="parameter_3" disabled="disabled" />
-                           <!--  <div id="operationBox"><span id="operate"><b>修改</b></span>
+                            <input type="text" class="txt state" value="" id="parameter_3" disabled="disabled" />
+<!--没有用到
+                            <div id="operationBox"><span id="operate"><b>修改</b></span>
                             </div>
                             <div id="submitBox">
                                 <div id="submit">确认</div>
                                 <div id="cancer">取消</div>
-                            </div> -->
+                            </div>
+-->
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="footer">
-                <a href="./editor" target="_blank">修改</a>
-                <p>Coryright 2015 Dotwe Studio. All rights reserved.</p></div>
+            <a href="./editor" target="_blank">修改</a>
+            <div id="footer">Coryright 2015 Dotwe Studio. All rights reserved.</div>
         </div>
     </form>
-
     <script src="./jquery-2.1.3.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
