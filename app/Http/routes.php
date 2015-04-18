@@ -15,3 +15,6 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('/update', 'Datacontroller@update');
 Route::get('/fetch', 'Datacontroller@fetch');
+Route::get('/editor', function(){
+	return view('edit');
+});

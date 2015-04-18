@@ -52,4 +52,8 @@ class Datacontroller extends Controller {
 			return response()->json($result);
 		}
 	}
+	
+	public function editView(){
+		return view('edit');
+	}
 }
