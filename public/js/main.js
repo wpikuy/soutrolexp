@@ -149,11 +149,11 @@ function paraShow(sms, data) {
 //电源参数自动刷新
 function paraRefresh() {
     if (!station) {
-        alert("请选择 站点！");
+ //       alert("请选择 站点！");
     } else if (!machine) {
-        alert("请选择 设备！");
+ //       alert("请选择 设备！");
     } else if (!source) {
-        alert("请选择 电源！");
+ //       alert("请选择 电源！");
     } else if ($("#submitBox").css("display") == "none") {
         var sms = machine + "_" + source + "_";
         $.ajax({

@@ -196,12 +196,12 @@
                         <div class="paraItem">
                             <p>开 关(1/0)：</p>
                             <input type="text" class="txt brake" value="" id="parameter_3" disabled="disabled" />
-                            <div id="operationBox"><span id="operate"><b>修改</b></span>
+                           <!--  <div id="operationBox"><span id="operate"><b>修改</b></span>
                             </div>
                             <div id="submitBox">
                                 <div id="submit">确认</div>
                                 <div id="cancer">取消</div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
