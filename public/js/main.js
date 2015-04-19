@@ -16,7 +16,7 @@ $(document).ready(function () {
     $(".machineGet").click(machineGet);
     $(".sourceGet").click(sourceGet);
     //定时获取数据
-    setInterval(paraRefresh, 10000);
+    setInterval(paraRefresh, 3000);
     //没有用到---------------------------------------------------
 //    //开启修改功能
 //    doOperate();
