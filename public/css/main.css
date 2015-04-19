@@ -72,7 +72,8 @@ body{
         font-size: 20px;
     }
         .paraHead{
-            margin: 0 10px;
+            width: 354px;
+            margin: 0 auto;
             overflow: hidden;
         }
             #paraBg{
@@ -93,7 +94,8 @@ body{
                 float: left;
             }
         .paraItem{
-            margin: 0 10px;
+            width: 354px;
+            margin: 0 auto;
             overflow: hidden;
         }
             .paraItem p{
@@ -104,9 +106,10 @@ body{
             }
             .paraItem input[type="text"]{
                 width: 180px;
-                margin: 5px 10px;
+                margin: 5px;
                 float: left;
             }
+/*没有用到---------------------------------------------------
             #operationBox{
                 display: none;
                 margin: 5px;
@@ -138,7 +141,4 @@ body{
                     float: left;
                     font-size: 20px;
                     cursor: pointer;
-                }
-.station, .machine, .source{
-    cursor: pointer;
-}
+                }*/
