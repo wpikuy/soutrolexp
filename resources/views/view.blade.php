@@ -206,7 +206,9 @@
                     </div>
                 </div>
             </div>
-            <div id="footer">Coryright 2015 Dotwe Studio. All rights reserved.</div>
+            <div id="footer">
+                <a href="./editor" target="_blank">修改</a>
+                <p>Coryright 2015 Dotwe Studio. All rights reserved.</p></div>
         </div>
     </form>
 
