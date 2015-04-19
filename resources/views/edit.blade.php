@@ -16,21 +16,20 @@
 <h3>电源信息</h3>
 <form name="data" action="" method="get">
 <table>
-	<tr>	<td>机器编号：</td>
+	<tr>	<td class="right">机器编号：</td>
 			<td><input id="machine" type="text" name="switch" value="1"  class="data" /></td>
 	</tr>
 
-	<tr>	<td>电源编号：</td>
+	<tr>	<td class="right">电源编号：</td>
 			<td><input id="source" type="text" name="voltage" value="1"
 			  class="data" /></td>
 	</tr>
 
-	<tr>	<td>参数：</td>
-			<td><input id="param" type="text" name="current" value="voltage"  
-				 class="data" /></td>
+	<tr>	<td class="right">参数：</td>
+			<td><select id="param"><option>voltage</option><option>current</option><option>state</option></select></td>
 	</tr>
 
-	<tr>	<td>值：</td>
+	<tr>	<td class="right">值：</td>
 			<td><input id="value" type="text" name="time" value="233"  
 				 /></td>
 	</tr>

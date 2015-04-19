@@ -94,7 +94,7 @@ window.json="";						//使用了全局变量，方便数据在多个函数内的
 function update(){
 	var machine = $('#machine').val();
 	var source = $('#source').val();
-	var param = $('#param').val();
+	var param = $("#param").find("option:selected").text();
 	var value = $('#value').val();
 	var key = "machine_" + machine + "_source_" + source + "_" + param;
 	$.ajax({

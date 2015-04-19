@@ -17,10 +17,11 @@ $(document).ready(function () {
     $(".sourceGet").click(sourceGet);
     //定时获取数据
     setInterval(paraRefresh, 10000);
-    //开启修改功能
-    doOperate();
-    //取消修改
-    cancerOperate();
+    //没有用到---------------------------------------------------
+//    //开启修改功能
+//    doOperate();
+//    //取消修改
+//    cancerOperate();
     //ajax
     $(".source").click(function () {
         var sms = machine + "_" + source + "_";
@@ -76,13 +77,15 @@ $(document).ready(function () {
 function machineHide() {
     $(".machineBox").css("display", "none");
     $("#operatingBox").css("display", "none");
-    $("#submitBox").css("display", "none");
+//    没有用到---------------------------------------------------
+//    $("#submitBox").css("display", "none");
 }
 
 function sourceHide() {
     $(".sourceBox").css("display", "none");
     $("#operatingBox").css("display", "none");
-    $("#submitBox").css("display", "none");
+//    没有用到---------------------------------------------------
+//    $("#submitBox").css("display", "none");
 }
 
 //machineBox和sourceBox的点击开启和其他地方的隐藏并且记录设备source的获取
@@ -90,7 +93,8 @@ function stationGet() {
     machineHide();
     sourceHide();
     $(this).next().css("display", "block");
-    $("#operationBox").css("display", "none");
+//    没有用到---------------------------------------------------
+//    $("#operationBox").css("display", "none");
     //清空参数值
     paraClear();
     //确认站点
@@ -107,7 +111,8 @@ function stationGet() {
 function machineGet() {
     sourceHide();
     $(this).next().css("display", "block");
-    $("#operationBox").css("display", "none");
+//    没有用到---------------------------------------------------
+//    $("#operationBox").css("display", "none");
     //清空参数值
     paraClear();
     //确认设备
@@ -121,7 +126,8 @@ function machineGet() {
 }
 
 function sourceGet() {
-    $("#operationBox").css("display", "block");
+//    没有用到---------------------------------------------------
+//    $("#operationBox").css("display", "block");
     //确认电源
     var sou = $(this).attr("class");
     source = sou.split(" ", 2)[1];
@@ -149,12 +155,12 @@ function paraShow(sms, data) {
 //电源参数自动刷新
 function paraRefresh() {
     if (!station) {
- //       alert("请选择 站点！");
+      // alert("请选择 站点！");
     } else if (!machine) {
- //       alert("请选择 设备！");
+      // alert("请选择 设备！");
     } else if (!source) {
- //       alert("请选择 电源！");
-    } else if ($("#submitBox").css("display") == "none") {
+       // alert("请选择 电源！");
+    } else {
         var sms = machine + "_" + source + "_";
         $.ajax({
             type: "GET",
@@ -173,22 +179,24 @@ function paraRefresh() {
 }
 
 
-//开启电源参数修改
-function doOperate() {
-    $("#operate").click(function () {
-        $(".txt").attr("disabled", false);
-        $("#submitBox").css("display", "block");
-    });
-}
+//    没有用到---------------------------------------------------
+////开启电源参数修改
+//function doOperate() {
+//    $("#operate").click(function () {
+//        $(".txt").attr("disabled", false);
+//        $("#submitBox").css("display", "block");
+//    });
+//}
 
 //取消电源修改
 function cancerOperate() {
     $("#cancer").click(paraModified);
 }
 
-//确认修改
-function paraModified() {
-    paraRefresh();
-    $(".txt").attr("disabled", "disabled");
-    $("#submitBox").css("display", "none");
-}
+//    没有用到---------------------------------------------------
+////确认修改
+//function paraModified() {
+//    paraRefresh();
+//    $(".txt").attr("disabled", "disabled");
+//    $("#submitBox").css("display", "none");
+//}
