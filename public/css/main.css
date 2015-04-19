@@ -1,0 +1,144 @@
+*{
+    text-align: center;
+    transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+body{
+    background-color: #EFEFEF;
+}
+#header{
+    width: 980px;
+    margin: 0 auto;
+    background-color: #BEBEBE;
+}
+#container{
+    width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.elastic{
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    float: left;
+}
+#menu{
+    width: 30%;
+    background-color: #DCDEDF;
+}
+    .station{
+        width: 80%;
+        padding: 5px 10%;
+    }
+    .station:hover{
+        background-color: #D5D5D5;
+    }
+        .station p{
+            margin: 0;
+            text-align: left;
+            font-size: 30px;
+        }
+        .machine{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .machine:hover{
+            background-color: #A3A0A0;
+        }
+            .machine p{
+                text-align: center;
+                font-size: 24px;
+            }
+            .source{
+                width: 80px;
+                margin-left: 60%;
+            }
+            .source:hover{
+                background-color: #8B8383;
+            }
+#info{
+    width: 61.8%;
+    margin-left: 8.2%;
+}
+    #facilityName{
+        height: 40px;
+        margin: 5px;
+    }
+    .paraBox{
+        padding: 10px 30px;
+        border-top: solid 2px #B6B6B6;
+        overflow: hidden;
+        font-size: 20px;
+    }
+        .paraHead{
+            margin: 0 10px;
+            overflow: hidden;
+        }
+            #paraBg{
+                width: 323.62px;
+                height: 200px;
+                margin: 10px auto;
+                background-image: url(../img/02.jpg);
+                background-size: 100% 100%;
+            }
+            .paraHead input[type="text"]{
+                width: 150px;
+                margin: 5px;
+                float: left;
+            }
+            .paraHead p{
+                width: 180px;
+                margin: 5px;
+                float: left;
+            }
+        .paraItem{
+            margin: 0 10px;
+            overflow: hidden;
+        }
+            .paraItem p{
+                width: 150px;
+                margin: 5px;
+                float: left;
+                text-align: right;
+            }
+            .paraItem input[type="text"]{
+                width: 180px;
+                margin: 5px 10px;
+                float: left;
+            }
+            #operationBox{
+                display: none;
+                margin: 5px;
+                float: left;
+                color: #0479A7;
+                cursor: pointer;
+            }
+            #submitBox{
+                display: none;
+                margin: 5px;
+                float: left;
+                color: #0479A7;
+            }
+                #submit{
+                    height: 22px;
+                    margin-right: 2px;
+                    padding: 0 3px;
+                    border: none;
+                    background-color: #FF7F50;
+                    float: left;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+                #cancer{
+                    height: 22px;
+                    padding: 0 3px;
+                    border: none;
+                    background-color: #69F7CC;
+                    float: left;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+.station, .machine, .source{
+    cursor: pointer;
+}

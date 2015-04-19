@@ -18,3 +18,6 @@ Route::get('/fetch', 'Datacontroller@fetch');
 Route::get('/editor', function(){
 	return view('edit');
 });
+Route::get('/view', function(){
+	return view('view');
+});

@@ -96,7 +96,7 @@ function update(){
 	var source = $('#source').val();
 	var param = $('#param').val();
 	var value = $('#value').val();
-	var key = "machine_" + machine + "-source_" + source + "-" + param;
+	var key = "machine_" + machine + "_source_" + source + "_" + param;
 	$.ajax({
 		type : 'get',
 		url : './update?' + key + "=" + value,
